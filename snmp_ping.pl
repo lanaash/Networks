@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$ping = "snmpget -v 2c -c public 192.168.0.1 .sysDescr.0";
+$ping = "snmpget -Ovq -r0 -v 2c -c public 192.168.0.1 .sysDescr.0";
 
 while (1) {
     $SIG{INT} = \&signal_handler;
