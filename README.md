@@ -7,3 +7,6 @@ The UDP source port increases incrementally which should hit different member li
 The snmpget sends each poll only once (no retries). Default timeout is 1 sec.
 
 
+# Packet loss hunting accross customer groups
+
+    for i in `cat my_ips.txt`; do fping -p20 -r0 -q -c50 $i; done
