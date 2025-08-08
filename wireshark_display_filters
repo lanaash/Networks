@@ -74,6 +74,7 @@ http.server contains "Microsoft-IIS/7.5"
 http.user_agent                  # Add to columns!
 (http.user_agent contains "sqlmap") or (http.user_agent contains "Nmap") or (http.user_agent contains "Wfuzz") or (http.user_agent contains "Nikto")
 http.request.full_uri == "http://cdn.blablabla.xyz:8080/27fe2489"
+http.request.uri contains “.php”
 
 
 ## Export objects
