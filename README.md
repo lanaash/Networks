@@ -11,12 +11,4 @@ The snmpget sends each poll only once (no retries). Default timeout is 1 sec.
 
     for i in `cat my_ips.txt`; do fping -p20 -r0 -q -c50 $i; done
 
-# Regex debugging
 
-    apt-get install libregexp-debugger-perl
-
-Run rxrx and supply 
-
-    /[regex] & 'string'
-
-Then m to step thru the regex operation
