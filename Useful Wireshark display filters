@@ -76,12 +76,6 @@ http.user_agent                  # Add to columns!
 http.request.full_uri == "http://cdn.blablabla.xyz:8080/27fe2489"
 http.request.uri contains “.php”
 
-
-## Export objects
---export-objects ?
---export-objects "http,out_path"
-
-
 ## TCP
 tcp.port in {80 443 8080}
 
