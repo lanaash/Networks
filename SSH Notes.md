@@ -49,7 +49,7 @@ e.g. set browser SOCKSv4 proxy to 127.0.0.1:9999
 
 ```ssh -L 5000:127.0.0.1:5000 192.168.0.1```
 
-e.g. browse http://localhost:5000
+e.g. browse http[:]//localhost[:]5000
 
 
 #### Add forward to existing session
