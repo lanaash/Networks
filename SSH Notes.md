@@ -15,7 +15,7 @@ ssh -Q ciphers
 
 ### Close hung session
 
-~. 'hit enter key'
+~ . 'hit enter key'
 
 
 ## Keys
