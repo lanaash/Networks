@@ -79,6 +79,9 @@ http.request.uri contains “.php”
 ## TCP
 tcp.port in {80 443 8080}
 
+## TCP SYNs e.g. MSS;
+tcp.port == 443 and tcp.flags.syn == 1
+
 ## IP
 ip.addr
 ip.src
