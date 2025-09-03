@@ -77,8 +77,15 @@ e.g. telnet 192.168.0.1 1000
 
 -o StrictHostKeyChecking=no
 
+## Improve scp throughput
 
-## Old Mikrotik routers
+Remove CS1 marking
+
+-o IPQoS=throughput
+
+## Old devices
+
+### Mikrotik RouterOS
 
 ```ssh -l admin -o Ciphers=3des-cbc -o kexAlgorithms=diffie-hellman-group1-sha1 x.x.x.x```
 
@@ -89,15 +96,7 @@ Might also need;
 -o PubkeyAcceptedAlgorithms=ssh-dss
 
 
-## Improve scp throughput
-
-Remove CS1 marking
-
--o IPQoS=throughput
-
-
-
-## Old Cisco routers
+### Cisco IOS
 
 If you get "Bad server host key: Invalid key length" or "no matching cipher found"
 
