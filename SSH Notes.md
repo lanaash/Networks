@@ -15,7 +15,7 @@ ssh -Q ciphers
 
 ### Close hung session
 
-~.<enter>
+~. 'hit enter key'
 
 
 ## Keys
@@ -54,7 +54,7 @@ e.g. browse http://localhost:5000
 
 #### Add forward to existing session
 
-<enter>~C
+'hit enter key' ~ C
 -L localport:server:serverport 
 
 e.g. 
