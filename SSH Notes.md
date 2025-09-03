@@ -68,18 +68,22 @@ e.g.
 e.g. telnet 192.168.0.1 1000
 
 
+
 ## sshpass
 
-```sshpass -p 'password' -l admin x.x.x.x 'command'```
+```sshpass -f pass.txt -l admin x.x.x.x 'command'```
 
+## Batching
 
-## Scripting e.g. sshpass
+### Connect timeout
+
+-o ConnectTimeout=3
+
+### Scripting e.g. sshpass
 
 -o StrictHostKeyChecking=no
 
-## Improve scp throughput
-
-Remove CS1 marking
+### Improve scp throughput (remove CS1 marking)
 
 -o IPQoS=throughput
 
