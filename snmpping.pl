@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# Useful for identifying link problems in LAGs if 4 tuple hashing used
 
 $ping = "snmpget -Ovq -r0 -v 2c -c public 192.168.0.1 .sysDescr.0";
 
